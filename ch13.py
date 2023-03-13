@@ -1,12 +1,6 @@
 ### 리스트3
 
 
-
-
-a = range(1, 11)
-print(type(a))
-print(list(a))
-
 ###연습문제1
 ##print("원소가 모두 0:", [0 for _ in range(10)])
 ##print("또 다른 방법:", [0]*10)
