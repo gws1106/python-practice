@@ -20,3 +20,20 @@
 ##    lis.append(i * i)
 ##
 ##print(lis)
+
+###자가진단2
+##lis = input().split()
+##cnt = 0
+##
+##for ch in range(ord('A'), ord('Z') + 1):
+##    cnt = lis.count(chr(ch))
+##
+##    if cnt > 0:
+##        print(f"{chr(ch)} : {cnt}")
+##
+    
+##lis = input().split()
+##
+##for i in range(ord('A'), ord('Z') + 1):
+##    if lis.count(chr(i)) > 0:
+##        print(f"{chr(i)} : {lis.count(chr(i))}")
