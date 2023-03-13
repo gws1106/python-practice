@@ -26,7 +26,7 @@
 ##cnt = 0
 ##
 ##for ch in range(ord('A'), ord('Z') + 1):
-##    cnt = lis.count(chr(ch))
+##    cnt = lis.count(chr(ch))         #lis.count(x) - lis라는 리스트 안에 원소x의 수를 반환해준다
 ##
 ##    if cnt > 0:
 ##        print(f"{chr(ch)} : {cnt}")
@@ -37,3 +37,34 @@
 ##for i in range(ord('A'), ord('Z') + 1):
 ##    if lis.count(chr(i)) > 0:
 ##        print(f"{chr(i)} : {lis.count(chr(i))}")
+
+
+###자가진단3
+##li = list(map(int, input().split()))
+##cnt = [0 for _ in range(10)]
+##
+##for num in li:
+##    cnt[num // 10] += 1
+##
+##for i in range(10):
+##    if cnt[i] > 0:
+##        print(f"{i} : {cnt[i]}")    
+
+
+###자가진단4
+##n = int(input())
+##lis = [0 for _ in range(100)]
+##
+##lis[0] = 100
+##lis[1] = n
+##
+##for i in range(2, 100):
+##    lis[i] = lis[i - 2] - lis[i - 1]
+##
+##for i in range(100):
+##    print(lis[i], end = ' ')
+##    if lis[i] < 0:
+##        break
+
+
+#자가진단5
