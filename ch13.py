@@ -67,4 +67,32 @@
 ##        break
 
 
-#자가진단5
+###자가진단5
+##arr = [[5, 8, 10, 6, 4], [11, 20, 1, 13, 2], [7, 9, 14, 22, 3]]
+##
+##for i in range(3):
+##    for j in range(5):
+##        print(f"   {arr[i][j]:2d}", end = ' ')
+##    print()
+
+
+###자가진단6
+##arr1 = []
+##arr2 = [0 for _ in range(2)]
+##
+##print("first array")
+##for i in range(2):      #이중 리스트 입력받기
+##    arr1.append(list(map(int, input().split())))
+##
+##print("second array")
+##for i in range(2):      #또 다른 방법
+##    arr2[i] = list(map(int, input().split()))
+##
+##for i in range(2):
+##    for j in range(4):
+##        print(arr1[i][j] * arr2[i][j], end = ' ')
+##    print()
+
+
+#자가진단7
+
