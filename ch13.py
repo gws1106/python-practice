@@ -94,5 +94,37 @@
 ##    print()
 
 
-#자가진단7
+###자가진단7
+##arr = []
+##cnt_succ = 0
+##
+##for _ in range(5):   #이중 리스트 생성
+##    arr.append(list(map(int, input().split())))
+##
+##for i in range(5):
+##    sum_ = 0
+##    for j in range(4):
+##        sum_ += arr[i][j]
+##    if sum_ / 4 >= 80:
+##        print("pass")
+##        cnt_succ += 1
+##    else:
+##        print("fail")
+##
+##print(f"Successful : {cnt_succ}")
 
+
+###자가진단8
+##arr = [[0 for _ in range(6)] for _ in range(6)]
+##arr[0][1] = 1
+##
+##for i in range(1, 6):
+##    for j in range(1, 6):
+##        arr[i][j] = arr[i - 1][j] + arr[i][j - 1]
+##        print(arr[i][j], end = ' ')
+##    print()
+
+
+#형성평가
+#1.
+        
