@@ -125,6 +125,59 @@
 ##    print()
 
 
-#형성평가
-#1.
-        
+###형성평가
+###1.
+##lis = [f"No.{i}" for i in range(1, 6)]
+##print(lis)
+
+
+###2.
+##size, n = map(int, input().split())
+##lis = [0 for i in range(size)]
+##
+##for i in range(size):
+##    if i % n == 0:
+##        lis[i] = True
+##    else:
+##        lis[i] = False
+##        
+##print(lis)
+
+
+###3.
+##lis = list(map(int, input().split()))
+##cnt = [0 for _ in range(6)]
+##
+##for i in range(6):
+##    cnt[i] = lis.count(i + 1)
+##    print(f"{i + 1} : {cnt[i]}")
+
+###3. 다른답안
+##lst = list(map(int, input().split()))
+##
+##for i in range(1, 7):
+##    print(f"{i} : {lst.count(i)}")
+
+
+###4.
+##scores = list(map(int, input().split()))
+##
+##for i in range(len(scores)):
+##    scores[i] = scores[i] // 10
+##
+##for i in range(10, -1, -1):
+##    if scores.count(i) > 0:
+##        print(f"{i * 10} : {scores.count(i)} person")
+
+##scores = list(map(int, input().split()))
+##lis = [0 for _ in range(11)]
+##
+##for score in scores:
+##    lis[score // 10] += 1
+##
+##for i in range(len(lis) - 1, -1, -1):
+##    if lis[i] > 0:
+##        print(f"{i * 10} : {lis[i]} person")
+
+
+#5.
