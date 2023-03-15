@@ -180,4 +180,122 @@
 ##        print(f"{i * 10} : {lis[i]} person")
 
 
-#5.
+###5.
+##n1, n2 = map(int, input().split())
+##lis = [0 for _ in range(10)]
+##
+##lis[0], lis[1] = n1, n2
+##
+##for i in range(2, 10):
+##    lis[i] = lis[i - 2] + lis[i - 1]
+##    if lis[i] >= 10:
+##        lis[i] = lis[i] % 10
+##
+##for i in range(10):
+##    print(lis[i], end = ' ')
+    
+
+###6.
+##lis = [ [3, 5, 9],
+##        [2, 11, 5],
+##        [8, 30, 10],
+##        [22, 5, 1]
+##        ]
+##sum_ = 0
+##
+##for i in range(4):
+##    for j in range(3):
+##        print(lis[i][j], end = ' ')
+##        sum_ += lis[i][j]
+##    print()
+##print(sum_)
+
+
+###7.
+##lis = []
+##
+##for i in range(4):
+##    lis.append(list(map(int, input(f"{i + 1}class? ").split())))
+##
+##for i in range(4):
+##    sum_ = 0
+##    for j in range(3):
+##        sum_ += lis[i][j]
+##    print(f"{i + 1}class : {sum_}")
+
+
+###8.
+##lis = [[0 for _ in range(7)] for _ in range(6)]
+##lis[1][1], lis[1][3], lis[1][5] = 1, 1, 1
+##
+####for i in range(1, 6, 2):
+####    lis[i][j] = 1
+##
+##
+##for i in range(2, 6):
+##    for j in range(1, 6):
+##        lis[i][j] = lis[i - 1][j - 1] + lis[i - 1][j + 1]
+##
+##for i in range(1, 6):
+##    for j in range(1, 6):
+##        print(lis[i][j], end = ' ')
+##    print()
+        
+
+###9.
+##lis1 = []
+##lis2 = []
+##lis3 = [[0 for _ in range(3)] for _ in range(2)]
+##
+##print("first array")
+##for i in range(2):
+##    lis1.append(list(map(int, input().split())))
+##
+##print("second array")
+##for i in range(2):
+##    lis2.append(list(map(int, input().split())))
+##
+##for i in range(2):
+##    for j in range(3):
+##        lis3[i][j] = lis1[i][j] * lis2[i][j]
+##        print(lis3[i][j], end = ' ')
+##    print()
+
+
+###10. 최적화 필요!!
+##lis = []
+
+##sum_column_0 = 0
+##sum_column_1 = 0
+##cnt_column = 0
+
+##sum_total = 0
+##cnt_total = 0
+
+##for i in range(4):
+##    lis.append(list(map(int, input().split())))
+##
+##for i in range(4):
+##    sum_column_0 += lis[i][0]
+##    sum_column_1 += lis[i][1]
+##    cnt_column +=1
+##    
+##    sum_row = 0
+##    cnt_row = 0
+##    for j in range(2):
+##        sum_total += lis[i][j]
+##        cnt_total += 1
+
+##        sum_row += lis[i][j]
+##        cnt_row += 1
+##    print(int(sum_row / cnt_row), end = ' ')
+##print()
+
+##print(int(sum_column_0 / cnt_column), int(sum_column_1 / cnt_column))    #소수점 이하는 버림 -> 정수로 형변환 할것, 소수점 이하는 반올림 -> f"{~~:.0f}"
+##print(int(sum_total / cnt_total))
+
+
+#11.
+n = int(input())
+        
+
